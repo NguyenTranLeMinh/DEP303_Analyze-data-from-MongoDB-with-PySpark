@@ -51,7 +51,7 @@ Do dữ liệu ở MongoDB được import từ csv nên các trường như Cre
 
 
 root
- |-- Id: integer (nullable = true)
+ |-- Id: integer (nullable = true) \n
  |-- OwnerUserId: integer (nullable = true)
  |-- CreationDate: date (nullable = true)
  |-- ClosedDate: date (nullable = true)
