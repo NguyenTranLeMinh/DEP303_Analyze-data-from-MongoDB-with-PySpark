@@ -176,3 +176,15 @@ Mình cài đặt bản zip cho Window.
 Cài đặt thêm 2 bản zip (để làm quen với cả 2): MongoDB Compass (GUI) và MongoDB Database Tools (CMD) 
 
 Chú ý: Thêm đường dẫn tới các file .exe cần thiết trong Enviroment Variables trên Window.
+
+***
+
+Cài đặt Spark, lưu ý thêm JAVA_HOME, HADOOP_HOME, PYSPARK_PYTHON, SPARK_HOME cũng như các path: %SPARK_HOME%\bin, %JAVA_HOME%\bin, %HADOOP_HOME%\bin
+
+***
+
+Link dataset chưa có.
+
+***
+
+Lưu ý khi chạy tệp main.py chỉ nên chạy từng yêu cầu riêng (comment các yêu cầu khác nếu máy yếu)
