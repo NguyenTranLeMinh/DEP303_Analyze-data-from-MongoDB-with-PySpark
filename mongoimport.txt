@@ -1,0 +1,2 @@
+mongoimport --type csv -d dep303_asm1 -c questions --headerline --drop Questions.csv
+mongoimport --type csv -d dep303_asm1 -c answers --headerline --drop Answers.csv
