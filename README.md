@@ -51,7 +51,7 @@ Do dữ liệu ở MongoDB được import từ csv nên các trường như Cre
 
 
 root
- |-- Id: integer (nullable = true) \n
+ |-- Id: integer (nullable = true)
  |-- OwnerUserId: integer (nullable = true)
  |-- CreationDate: date (nullable = true)
  |-- ClosedDate: date (nullable = true)
@@ -86,17 +86,17 @@ Java, Python, C++, C#, Go, Ruby, Javascript, PHP, HTML, CSS, SQL
 
 5. Yêu cầu 2 : Tìm các domain được sử dụng nhiều nhất trong các câu hỏi
 
-Trong các câu hỏi thường chúng ta sẽ dẫn link từ các trang web khác vào. Ở yêu cầu này, bạn sẽ cần tìm xem 20 domain nào được người dùng sử dụng nhiều nhất. Chú ý rằng các domain sẽ chỉ gồm tên domain, các bạn sẽ không cần trích xuất những tham số phía sau. Ví dụ về một domain: www.google.com, www.facebook.com,...
+Trong các câu hỏi thường chúng ta sẽ dẫn link từ các trang web khác vào. Ở yêu cầu này, bạn sẽ cần tìm xem 20 domain nào được người dùng sử dụng nhiều nhất. Chú ý rằng các domain sẽ chỉ gồm tên domain, các bạn sẽ không cần trích xuất những tham số phía sau. Ví dụ về một domain: w ww.google.com, w ww.facebook.com,...
 
 Để hoàn thành được yêu cầu này, bạn có thể sử dụng regex để trích xuất các url, sau đó áp dung một số biện pháp xử lý chuỗi để lấy ra được tên của domain, cuối cùng là dùng Aggregation để gộp nhóm lại. Kết quả sẽ như sau:
 
 +--------------------+-----+                                                    
 |              Domain|Count|
 +--------------------+-----+
-|   www.cs.bham.ac.uk|    4|
+|  w ww.cs.bham.ac.uk|    4|
 |groups.csail.mit.edu|    7|
 |     fiddlertool.com|    1|
-|   www.dynagraph.org|    1|
+|  w ww.dynagraph.org|    1|
 | images.mydomain.com|    1|
 |  img7.imageshack.us|    3|
 +--------------------+-----+
